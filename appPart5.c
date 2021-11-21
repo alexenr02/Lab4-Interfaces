@@ -131,7 +131,7 @@ int miPrintf_flag=0;
 int miStringCont=0;
 char auxString[] = "                                 ";
 
-					//0-->Inválida
+					//0-->InvÃ¡lida
 					//6-->Digito
 					//7-->Operador
 int chrTrans[TRANS_COUNT]=
@@ -845,8 +845,8 @@ void APP_Tasks (void)
                     {
                         //appData.readBuffer[i] = appData.readBuffer[i] + 1;
                         chr=appData.readBuffer[i];
-                        trans=calcTrans(chr);	//Calcular la transición según la entrada del teclado
-                        if (trans) {			//Validar por transición valida (la transición 0 es inválida)
+                        trans=calcTrans(chr);	//Calcular la transiciÃ³n segÃºn la entrada del teclado
+                        if (trans) {			//Validar por transiciÃ³n valida (la transiciÃ³n 0 es invÃ¡lida)
                             edoAnt=edo;					//Guardar el estado anterior
                             edo=sigEdo(edoAnt,trans);	//Calcular el siguiente estado
                             if (edoAnt!=edo)			//Solo si hay cambio de estado hay que ...
